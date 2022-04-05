@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>胖虎工具箱</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="./lib/bootstrap.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/zmd.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background-image: url(./images/bg/bg7.jpeg);
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+
+        .wz {
+            text-align: center;
+            line-height: 100px;
+            color: aliceblue;
+            font-weight: bold;
+            font-size: large;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <!-- 走马灯 -->
+    <div class="zmd">
+        <ul>
+            <li><img src="./images/card/card1.jpg" alt="" /></li>
+            <li><img src="./images/card/card2.jpg" alt="" /></li>
+            <li><img src="./images/card/card3.jpg" alt="" /></li>
+            <li><img src="./images/card/card5.jpg" alt="" /></li>
+            <li><img src="./images/card/card6.jpg" alt="" /></li>
+            <li><img src="./images/card/card7.jpg" alt="" /></li>
+            <li><img src="./images/card/card8.jpg" alt="" /></li>
+            <!-- 第567移动的时候,显示区域不能留白 -->
+            <li><img src="./images/card/card1.jpg" alt="" /></li>
+            <li><img src="./images/card/card2.jpg" alt="" /></li>
+            <li><img src="./images/card/card3.jpg" alt="" /></li>
+        </ul>
+
+    </div>
+
+
+    <!-- 立方体 -->
+    <div class="lft">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="./other/RobotChat.html">
+                        <img src="./images/index/index6.jpg" class="img-responsive" />
+                    </a>
+                    <div class="wz">小黄同学</div>
+
+                </div>
+                <div class="swiper-slide">
+                    <a href="./other/card.html">
+                        <img src="./images/index/index5.jpg" class="img-responsive" />
+                    </a>
+                    <div class="wz">亿图</div>
+
+                </div>
+                <div class="swiper-slide">
+                    <a href="./other/BookManage.html">
+                        <img src="./images/index/card4.jpg" class="img-responsive" />
+                    </a>
+                    <div class="wz">三味书屋</div>
+
+                </div>
+                <div class="swiper-slide">
+                    <a href="./other/bilibili.html">
+                        <img src="./images/index/index4.jpg" class="img-responsive" />
+                    </a>
+                    <div class="wz">小破站</div>
+
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>

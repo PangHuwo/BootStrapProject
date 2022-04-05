@@ -1,0 +1,46 @@
+.carousel img {
+  height: 100% !important;
+}
+@media (max-width: 992px) {
+  .carousel .item {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .item {
+    height: 250x;
+  }
+}
+@media (min-width: 992px) {
+  .carousel .item {
+    height: 500x;
+  }
+}
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+}
+.project {
+  padding-top: 30px;
+  text-align: center;
+}
+.project .container div .a1 {
+  display: block;
+  background-size: cover;
+  height: 200px;
+}
+.project .container div .a2 {
+  display: block;
+  background-size: cover;
+  height: 200px;
+}
+.project .container div .a3 {
+  display: block;
+  background-size: cover;
+  height: 200px;
+}
+.project .container div .a4 {
+  display: block;
+  background-size: cover;
+  height: 200px;
+}
